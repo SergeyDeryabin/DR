@@ -1,0 +1,94 @@
+<html>
+<meta http-equiv=Content-Type content="text/html;charset=UTF-8">
+<head>
+<style media="screen" type="text/css">
+body {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
+}
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 800px;
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 500%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  perspective: 400px;
+  text-align: justify;
+}
+
+.crawl {
+  position: relative;
+  top: 9999px;
+  transform-origin: 50% 100%;
+  animation: crawl 60s linear;
+}
+
+.crawl > .title {
+  font-size: 90%;
+  text-align: center;
+}
+
+.crawl > .title h1 {
+  margin: 0 0 100px;
+  text-transform: uppercase;
+}
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(20deg)  translateZ(0);
+  }
+  100% { 
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+</style>
+</head>
+
+<body>
+
+ <div class="fade"></div>
+
+<section class="star-wars">
+
+  <div class="crawl">
+
+    <div class="title">
+      <h1> </h1>
+      <h1>Любаша!!!</h1>
+     <h1>Поздравляю с Днем Рождения!!!</h1>
+     <h1>Желаю здоровья, счастья, благополучия!!!</h1>
+    </div>
+    <p></p>
+    <p>Сергей</p>
+     <p></p>
+     <p>p.s.</p>
+     <p></p>
+     <p>День Рожденья, без кокетства, - </p>
+     <p>Самый лучший праздник с детства!</p>
+     <p>Гости, свечи, ожидающий расправы сладкий торт,</p>
+     <p>Роз букеты и конфеты,</p>
+     <p>Поздравления, сонеты,</p>
+     <p>И друзей к тебе собравшихся восторг!</p>
+     <p></p>
+  </div>
+  </body>
+  </html>
